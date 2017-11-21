@@ -3,19 +3,19 @@
 //  Surfing
 //
 //  Created by Meng Li on 7/15/16.
-//  Copyright Â© 2016 Meng Li. All rights reserved.
+//  Copyright © 2016 Meng Li. All rights reserved.
 //
 
 #ifndef helper_hpp
 #define helper_hpp
 
-// #include <mex.h>
 #include <stdio.h>
 #include <cstdlib>
 #include <cmath>
 #include <stdio.h>
 #include <math.h>
-#include <armadillo>
+
+#include "RcppArmadillo.h"
 
 using namespace std;
 using namespace arma;
