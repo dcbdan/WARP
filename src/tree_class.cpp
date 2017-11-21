@@ -224,7 +224,6 @@ vec class_tree::get_phi_map(const mat& par, const vec& w_d, const vec& ss_adjust
     return log_Phi;
 };
 
-// [[Rcpp::export]]
 double class_tree::marginal_likelihood(const mat& par)
 {
     // parameters: 3 rows by (total_level + 1): last element is sigma

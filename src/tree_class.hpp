@@ -14,7 +14,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <math.h>
-#include <armadillo>
+
+#include "RcppArmadillo.h"
 
 using namespace std;
 using namespace arma;

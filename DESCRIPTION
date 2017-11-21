@@ -5,6 +5,7 @@ Version: 1.0
 Date: 2017-11-19
 Author: Meng Li
 Maintainer: Daniel Bourgeois <dcb10@rice.edu>
+Description: Wavelets with adaptive recursive partitioning applied to image reconstruction. See "Partition mixture of 1D wavelets for multi-dimensional data" by Meng Li and Li Ma, arXiv:1711.00789
 License: MIT License
 Imports: Rcpp (>= 0.12.12)
 LinkingTo: Rcpp, RcppArmadillo

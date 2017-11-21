@@ -1,0 +1,3 @@
+useDynLib(WARP)
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")
