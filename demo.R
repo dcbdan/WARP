@@ -1,6 +1,6 @@
-library("WARP", lib.loc="/path/to/WARP/library/")
+library("WARP", lib.loc="/path/to/bld/")
 
-lena <- as.matrix(read.csv("~/path/to/WARP/lena_data.csv",header=FALSE))
+lena <- as.matrix(read.csv("/path/to/WARP/lena_data.csv",header=FALSE))
 
 obs_true <- lena / 255
 obs_true <- obs_true
