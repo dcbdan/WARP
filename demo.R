@@ -1,4 +1,4 @@
-library("WARP", lib.loc="/path/to/bld/")
+library("WARP", lib.loc="/path/to/bld")
 
 lena <- as.matrix(read.csv("/path/to/WARP/lena_data.csv",header=FALSE))
 
@@ -22,18 +22,18 @@ step = 1
 BMA_cs = tree_fit(obs, dimension, hyper0, step)
 BMA_cs = matrix(BMA_cs, nrow = nr, ncol = nc)
 
+plot_image = function(input)
+  image(
+    t(apply(input, 2, rev)),
+    col = grey(seq(0, 1, length = 256)))
+
 par(mfrow = c(2,2))
-image(obs_true)
-image(obs_raw)
-image(BMA_no_cs)
-image(BMA_cs)
+plot_image(obs_true)
+plot_image(obs_raw)
+plot_image(BMA_no_cs)
+plot_image(BMA_cs)
 
 mse(obs_true)
 mse(obs_raw)
 mse(BMA_no_cs)
 mse(BMA_cs)
-
-
-
-
-
